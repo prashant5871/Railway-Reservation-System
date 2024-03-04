@@ -9,52 +9,8 @@ from django.contrib import messages
 def home(request):
     return render(request,'index.html')
 
-def login_user(request):
-
-    # error = False
-    # valid = False
-
-    # if request.method == "POST":
-    #     name = request.POST["username"]
-    #     pwd = request.POST["password"]
-
-    #     try:
-    #         user = authenticate(username = name, password = pwd)
-    #     except:
-    #         error = True   
-    #     try:
-    #         if user:
-    #             login(request,user)
-    #             valid = True
-    #     except:
-    #         error = True
-    
-    # dic = {'error':error,'valid':valid}
-
-    return render(request,'login.html')
 
 def login_user(request):
-
-    # error = False
-    # valid = False
-
-    # if request.method == "POST":
-    #     name = request.POST["username"]
-    #     pwd = request.POST["password"]
-
-    #     try:
-    #         user = authenticate(username = name, password = pwd)
-    #     except:
-    #         error = True   
-    #     try:
-    #         if user:
-    #             login(request,user)
-    #             valid = True
-    #     except:
-    #         error = True
-    
-    # dic = {'error':error,'valid':valid}
-
     return render(request,'login.html')
 
 def register(request):
