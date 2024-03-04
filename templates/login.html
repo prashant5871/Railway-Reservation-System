@@ -121,24 +121,10 @@
     }
 </style>
 
-{% if error %}
-<script>
-    alert("Fill correct username and password");
-</script>
-{% endif %}
-
-{% if valid %}
-<script>
-    alert("Login successfull!")
-</script>
-{% endif %}
-
-<form action="login.html" method="post">
+<form method="post">
 
     <label for="Username">Username</label>
     <input type="text" placeholder="Enter your Username" id="Username" name="username">
-
-
     <label for="Password">Password</label>
     <input type="password" name="password" id="Password" placeholder="Enter your password">
 
